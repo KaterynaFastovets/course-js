@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Task</title>
+  </head>
+  <body>
+    <h1>Задача 4.</h1>
+    <p>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+    <script>
+        // Вводимо необхідні дані
+      const length = parseFloat(prompt("Введіть довжину у сантиметрах", "3000"));
+
+      // Заходимо результат
+      const lengthMeters = length / 100;
+      const lengthKilometers = length / 1000;
+      // Виводимо результат
+      document.write(`
+      <p> ${length} см - це ${lengthMeters} м або ${lengthKilometers} км</p>
+      `);
+    </script>
+  </body>
+</html>

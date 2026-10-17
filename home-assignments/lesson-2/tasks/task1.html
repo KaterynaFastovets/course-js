@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Task</title>
+  </head>
+  <body>
+    <h1>Задача 1.</h1>
+    <p>
+      Знайти суму, добуток та частку двох дійсних чисел. Результат вивести у
+      формі таблиці
+    </p>
+
+    <script>
+      // Вводимо необхідні дані
+      let firstNumber = parseFloat(prompt("Введіть перше число", "2"));
+      let secondNumber = parseFloat(prompt("Введіть друге число", "3"));
+
+      // Заходимо результат
+      //  1)
+      const sum = firstNumber + secondNumber;
+      //  2)
+      const multiplication = firstNumber * secondNumber;
+      //  3)
+      const division = firstNumber / secondNumber;
+      // Виводимо результат
+      document.write(`
+        <table border="2px">
+      <tr>
+        <th>Дія</th>
+        <th>
+          Введені числа:
+          <br />
+          ${firstNumber} та ${secondNumber}
+        </th>
+      </tr>
+      <tr>
+        <th>сума</th>
+        <td>${sum}</td>
+      </tr>
+      <tr>
+        <th>добуток</th>
+        <td>${multiplication}</td>
+      </tr>
+      <tr>
+        <th>частка</th>
+        <td>${division}</td>
+      </tr>
+    </table>
+      
+      `);
+    </script>
+  </body>
+</html>
