@@ -3,23 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Task</title>
   </head>
-  <body>
-    <h1>Задача 6.</h1>
-    <p>
-      З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
-      Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек
-      (як у супермаркеті) використовуючи елементи розмітки.
-    </p>
-
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 25px 15px;
+      box-sizing: border-box;
+      gap: 15px;
+    "
+  >
+    <div class="task">
+      <div class="task__container">
+        <a class="task__button button" href="../index.html">Tasks</a>
+        <h1 class="task__title">Задача 6.</h1>
+        <p>
+          З клавіатури вводяться вартість товару та кількість одиниць 3 товарів.
+          Обчислити вартість кожного товару окремо та загальну вартість. Вивести
+          чек (як у супермаркеті) використовуючи елементи розмітки.
+        </p>
+      </div>
+    </div>
     <script>
       // Вводимо необхідні дані
 
       // Дані першого товару
-      const productOne = parseFloat(prompt("Введіть кількість товару шт/кг", "2"));
-      const priceOne = parseFloat(prompt("Введіть ціну товару грн","5"));
+      const productOne = parseFloat(
+        prompt("Введіть кількість товару шт/кг", "2"),
+      );
+      const priceOne = parseFloat(prompt("Введіть ціну товару грн", "5"));
       // Дані другого товару
       const productTwo = parseFloat(
         prompt("Введіть кількість товару шт/кг", "0.8"),
@@ -39,34 +57,70 @@
 
       // Виводимо результат
       document.write(`
-          <div style="border: 1px solid black; padding: 15px; width: 650px;">
-      <div style="display:flex; flex-direction: column; align-items: center; ">
+            <div
+      style="
+        color: #222222;
+        background-color: #f5f5f5;
+        border: 1px solid #cccccc;
+        padding: 15px;
+        width: 360px;
+      "
+    >
+      <div style="display: flex; flex-direction: column; align-items: center">
         <h1>ATБ</h1>
         <span>M.КИЇВ</span>
         <span>ВУЛ.ПАНАСЮКА,1</span>
         <span>ПН 000000000000</span>
       </div>
-      <span>------------------------------------------------------</span>
-      <div style="display:flex; flex-direction: column;">
+      <span style="color: #cccccc;">
+        ---------------------------------------
+      </span>
+      <div style="display: flex; flex-direction: column;">
         <span>Каса 5</span>
         <span>Чек 722548</span>
         <div>
-          <p  style = "display:flex; align-items: center; justify-content: space-between;">
+          <p
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
             <span>Продукт-1 ${productOne}*${priceOne}</span>
             <span>${sumProduct1.toFixed(2)} грн</span>
           </p>
-          <p  style = "display:flex; align-items: center; justify-content: space-between;">
+          <p
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
             <span>Продукт-2 ${productTwo}*${priceTwo}</span>
             <span>${sumProduct2.toFixed(2)} грн</span>
           </p>
-          <p  style = "display:flex; align-items: center; justify-content: space-between;">
+          <p
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
             <span>Продукт-3 ${productThree}*${priceThree}</span>
             <span>${sumProduct3.toFixed(2)} грн</span>
           </p>
         </div>
       </div>
-      <span>------------------------------------------------------</span>
-      <div  style = "display:flex; align-items: center; justify-content: space-between;">
+      <span style="color: #cccccc;">
+        ----------------------------------------
+      </span>
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        "
+      >
         <h2>СУМА</h2>
         <h3>${sumProducts.toFixed(2)} грн</h3>
       </div>

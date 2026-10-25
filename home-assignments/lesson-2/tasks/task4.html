@@ -3,15 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <title>Task</title>
   </head>
-  <body>
-    <h1>Задача 4.</h1>
-    <p>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 25px 15px;
+      box-sizing: border-box;
+      gap: 15px;
+    "
+  >
+    <div class="task">
+      <div class="task__container">
+        <a class="task__button button" href="../index.html">Tasks</a>
+        <h1 class="task__title">Задача 4.</h1>
+        <p>
+          Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.
+        </p>
+      </div>
+    </div>
     <script>
-        // Вводимо необхідні дані
-      const length = parseFloat(prompt("Введіть довжину у сантиметрах", "3000"));
+      // Вводимо необхідні дані
+      const length = parseFloat(
+        prompt("Введіть довжину у сантиметрах", "3000"),
+      );
 
       // Заходимо результат
       const lengthMeters = length / 100;

@@ -3,30 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../../style.css" />
     <title>Task</title>
   </head>
-  <body>
-    <h1>Задача 5.</h1>
-    <p>
-      Дано кількість секунд, що пройшла від початку доби. Визначити скільки це
-      годин і хвилин.
-    </p>
-
+  <body
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 25px 15px;
+      box-sizing: border-box;
+      gap: 15px;
+    "
+  >
+    <div class="task">
+      <div class="task__container">
+        <a class="task__button button" href="../index.html">Tasks</a>
+        <h1 class="task__title">Задача 5.</h1>
+        <p>
+          Дано кількість секунд, що пройшла від початку доби. Визначити скільки
+          це годин і хвилин.
+        </p>
+      </div>
+    </div>
     <script>
-        // Вводимо необхідні дані
-     const seconds = parseInt(prompt("Введіть кількість секунд, що пройшла від початку доби", "3006"));
-  
+      // Вводимо необхідні дані
+      const seconds = parseInt(
+        prompt("Введіть кількість секунд, що пройшла від початку доби", "3006"),
+      );
 
       // Заходимо результат
-       const minutes =Math.floor(seconds / 60) ;
-      const horus = Math.floor(minutes/ 60) ;
-     
+      const minutes = Math.floor(seconds / 3600);
+      const horus = Math.floor(minutes % 3600) / 60;
+
       // Виводимо результат
       document.write(`
-      <p> ${seconds} секунд - це ${horus} годин і ${minutes} хвилин</p>
+      <p> ${seconds} секунд - це ${horus} годин : ${minutes} хвилин</p>
       `);
     </script>
   </body>
-  
 </html>
