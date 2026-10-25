@@ -36,8 +36,8 @@
       );
 
       // Заходимо результат
-      const minutes = Math.floor(seconds / 3600);
-      const horus = Math.floor(minutes % 3600) / 60;
+      const horus = Math.floor(seconds / 3600);
+      const minutes = Math.floor((seconds % 3600) / 60);
 
       // Виводимо результат
       document.write(`
