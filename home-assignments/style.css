@@ -262,7 +262,8 @@ body {
   gap: 15px;
   padding: 25px;
   border-radius: 5px;
-  border: 0.5px solid var(--border-icon);
+   transition: all 0.3s ease;
+  border-left: 2px solid rgba(247, 223, 30, 0.25);
   background-color: var(--surface-hover);
 }
 .link-task {
@@ -270,19 +271,6 @@ body {
   flex-direction: column;
   gap: 15px;
   transition: color 0.3s ease;
-}
-
-.menu__item::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transition:
-    background-color 0.3s ease,
-    box-shadow 0.3s ease;
-  background-color: rgba(247, 223, 30, 0.25);
 }
 
 .menu__item > p,
@@ -307,6 +295,7 @@ body {
 
 /* button */
 .button::after {
+  position: relative;
   padding-left: 10px;
   content: "↗";
 }
@@ -384,14 +373,7 @@ body {
   }
   .menu__item:hover {
     box-shadow: inset 0 0 12px rgba(247, 223, 30, 0.12);
-  }
-
-  .menu__item:hover::after {
-    background-color: var(--js-yellow);
-    box-shadow:
-      0 0 3px rgba(247, 223, 30, 0.45),
-      0 0 5px rgba(247, 223, 30, 0.25),
-      0 0 5px rgba(247, 223, 30, 0.06);
+     border-left: 2px solid var(--js-yellow);
   }
   .link-task:hover {
     color: var(--js-yellow);
