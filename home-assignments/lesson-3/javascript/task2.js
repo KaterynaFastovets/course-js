@@ -10,7 +10,7 @@ else {
     document.write("Ви можете придбати цей товар!");
     const change = userMoney - productPrice;
     if (change >= lotteryPrice) {
-        document.write(`Ваша решта - ${change}, купіть лотерею за 4 грн!`);
+        document.write(` Ваша решта - ${change}, купіть лотерею за 4 грн!`);
     }
 }
 //# sourceMappingURL=task2.js.map
