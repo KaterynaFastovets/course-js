@@ -4,8 +4,7 @@ const firstChildName = prompt("Введіть імя першої дитини")
 const numberCandiesFirstChild: number = parseInt(
   prompt("Кількість цукерок") ?? "20",
 );
-let secondChildName = prompt("Введіть імя другої дитини");
-secondChildName = "Ваня";
+const secondChildName = prompt("Введіть імя другої дитини") ?? "Ваня";
 const numberCandiesSecondChild: number = parseInt(
   prompt("Кількість цукерок") ?? "23",
 );

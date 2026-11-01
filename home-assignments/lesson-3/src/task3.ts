@@ -6,7 +6,7 @@ let userAttempt = parseInt(prompt("Вгадайте число від 1 до 5. 
 
 const randomNumber =
   minNumber + Math.floor(Math.random() * (maxNumber - minNumber + 1));
-// //  min + Math.floor(Math.random() *(max - min + 1));
+//   min + Math.floor(Math.random() *(max - min + 1));
 if (
   isNaN(userAttempt) ||
   minNumber < 1 ||
@@ -19,11 +19,11 @@ if (
     document.write("Ви вгадали!");
   } else {
     userAttempt = parseInt(prompt("Не вгадали. Спроба 2:")!);
-  }
-  if (userAttempt === randomNumber) {
-    document.write(`Ви вгадали! Це число - ${randomNumber}`);
-  } else {
-    document.write(`Не вгадали. Секретне число - ${randomNumber}`);
+
+    if (userAttempt === randomNumber) {
+      document.write(`Ви вгадали! Це число - ${randomNumber}`);
+    } else {
+      document.write(`Не вгадали. Секретне число - ${randomNumber}`);
+    }
   }
 }
-
