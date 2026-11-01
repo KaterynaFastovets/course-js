@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Space%20Grotesk:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=JetBrains%20Mono:wght@400;600;700&display=swap");
 
 :root {
   /* Backgrounds */
@@ -163,6 +163,8 @@ body {
   font-size: 28px;
 }
 .breadcrumbus {
+  font-weight: 700;
+  text-transform: uppercase;
   font-size: 30px;
   display: flex;
   gap: 10px;
@@ -191,8 +193,8 @@ body {
 }
 
 .breadcrumbus__current {
+  font-size: 28px;
   font-weight: 400;
-  font-size: 30px;
 }
 .breadcrumbus__current::before {
   padding-right: 10px;
@@ -367,7 +369,7 @@ body {
     background-color: var(--text-muted);
   }
 }
-@keyframes color-change-1{
+@keyframes color-change-1 {
   0% {
     background-color: var(--js-yellow);
   }
@@ -386,7 +388,7 @@ body {
     background-color: var(--text-muted);
   }
   100% {
-    background-color:var(--js-yellow);
+    background-color: var(--js-yellow);
   }
 }
 .item-1 {
