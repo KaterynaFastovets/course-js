@@ -3,8 +3,8 @@ if (confirm("Почати тестування?")) {
   let evenNumber = 0;
   let oddNumber = 0;
 
-  for (let i = 1; i <= 10; i++) {
-    let randomNumber = Math.floor(Math.random() * 10) + 1;
+  for (let i = 1; i <= 100; i++) {
+    let randomNumber = 1+Math.floor(Math.random() *1000);
     document.write(`${randomNumber}<br>`);
     if (randomNumber % 2 === 0) evenNumber++;
     else oddNumber++;
