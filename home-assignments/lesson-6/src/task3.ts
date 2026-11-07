@@ -6,7 +6,9 @@ if (confirm("Почати тестування?")) {
 
   for (let i = 0; i < 3; i++) {
     userPassword = prompt(`Введіть пароль?`)!;
-    if (userPassword === correctPassword) break;
-    document.write(`<p>Пароль вірний!</p> `);
+    if (userPassword === correctPassword) {
+      document.write(`<p>Пароль вірний!</p> `);
+      break;
+    } else document.write(`<p>Не вірний пароль!</p> `);
   }
 }
