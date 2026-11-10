@@ -26,8 +26,7 @@ if (confirm("Почати тестування?")) {
         break;
 
       default:
-        season = "Невірний номер місяця!";
-        break;
+        throw new Error("Невірний номер місяця!");
     }
     return season;
   };

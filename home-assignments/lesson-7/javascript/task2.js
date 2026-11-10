@@ -41,7 +41,7 @@ if (confirm("Почати тестування?")) {
                 mount = "Грудень";
                 break;
             default:
-                mount = "Невірно вказаний номер місяця.";
+                throw new Error("Невірно вказаний номер місяця.");
         }
         return mount;
     }
