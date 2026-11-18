@@ -17,7 +17,7 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Масив з ${numberElements} елементів, заповнених нулями:</p>
-        <code>arrTask1 = [${arrTask1}]</code>
+        <p>arrTask1 = [${arrTask1}]</p>
       </div>
     </section>
   `);
@@ -43,7 +43,7 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Масив з ${numberElements} елементів:</p>
-        <code>arrTask2 = [${arrTask2}]</code>
+        <p>arrTask2 = [${arrTask2}]</p>
       </div>
     </section>
   `);
@@ -68,7 +68,7 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Масив з ${numberElements} елементів:</p>
-        <code>arrTask3 = [${arrTask3}]</code>
+        <p>arrTask3 = [${arrTask3}]</p>
       </div>
     </section>
   `);
@@ -88,9 +88,9 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Початковий масив:</p>
-        <code>arrTask4 = [${arrTask4}]</code>
+        <p>arrTask4 = [${arrTask4}]</p>
         <p>Елементи, більші за 100:</p>
-        <code>newArrTask4 = [${newArrTask4}]</code>
+        <p>newArrTask4 = [${newArrTask4}]</p>
       </div>
     </section>
   `);
@@ -114,9 +114,9 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Початковий масив:</p>
-        <code>arrTask5 = [${arrTask5}]</code>
+        <p>arrTask5 = [${arrTask5}]</p>
         <p>Добуток додатних елементів:</p>
-        <code>multiply = ${multiply}</code>
+        <p>multiply = ${multiply}</p>
       </div>
     </section>
   `);
@@ -126,7 +126,7 @@ if (confirm("Почати тестування?")) {
   const arrTask6 = [5, 2, 9, 10, 4, 8, 11, 3];
 
   const newArrTask6 = arrTask6.map((el) => {
-   return el > arrTask6[0] ? el * 2 : el;
+    return el > arrTask6[0] ? el * 2 : el;
   });
 
   document.write(`
@@ -138,9 +138,9 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Початковий масив:</p>
-        <code>arrTask6 = [${arrTask6}]</code>
+        <p>arrTask6 = [${arrTask6}]</p>
         <p>Новий масив:</p>
-        <code>newArrTask6 = [${newArrTask6}]</code>
+        <p>newArrTask6 = [${newArrTask6}]</p>
       </div>
     </section>
   `);
@@ -165,7 +165,7 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Масив цін після застосування знижки:</p>
-        <code>arrTask7 = [${arrTask7}]</code>
+        <p>arrTask7 = [${arrTask7}]</p>
       </div>
     </section>
   `);
@@ -192,9 +192,9 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Початковий масив:</p>
-        <code>carNumbers = [${carNumbers}]</code>
+        <p>carNumbers = [${carNumbers}]</p>
         <p>Новий масив:</p>
-        <code>NewCarNumber = [${NewCarNumber}]</code>
+        <p>NewCarNumber = [${NewCarNumber}]</p>
       </div>
     </section>
   `);
@@ -214,9 +214,9 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Початковий масив:</p>
-        <code>userName = [${userName}]</code>
+        <p>userName = [${userName}]</p>
         <p>Масив перших літер:</p>
-        <code>LetterOfUserName = [${LetterOfUserName}]</code>
+        <p>LetterOfUserName = [${LetterOfUserName}]</p>
       </div>
     </section>
   `);
@@ -238,9 +238,9 @@ if (confirm("Почати тестування?")) {
       </p>
       <div class="task__output">
         <p>Початковий масив цін:</p>
-        <code>arrTask10 = [${arrTask10}]</code>
+        <p>arrTask10 = [${arrTask10}]</p>
         <p>Масив сплаченого податку:</p>
-        <code>newArrTask10 = [${newArrTask10}]</code>
+        <p>newArrTask10 = [${newArrTask10}]</p>
       </div>
     </section>
   `);
