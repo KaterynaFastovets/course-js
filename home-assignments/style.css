@@ -335,6 +335,15 @@ body {
   height: 100%;
   object-fit: contain;
 }
+.task-list__item{
+  list-style: transparent;
+}
+.task-list{
+      font-family: var(--font-code);
+  margin-left: 40px;
+  color: var(--text-muted);
+ 
+}
 
 /* rabbit */
 .task__blok {
