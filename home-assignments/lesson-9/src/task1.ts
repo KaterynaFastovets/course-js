@@ -28,7 +28,7 @@ if (confirm("Почати тестування?")) {
 
   const arrTask2 = new Array(numberElements).fill(7);
   const half = Math.floor(arrTask2.length / 2);
-
+  // arrTask2.fill(7, numElement / 2);
   for (let i = 0; i < half; i++) {
     arrTask2[i] = 1;
   }
@@ -52,11 +52,7 @@ if (confirm("Почати тестування?")) {
 
   numberElements = parseInt(prompt("Задача 3. Введіть кількість елементів:")!);
 
-  const arrTask3 = new Array(numberElements).fill(7);
-
-  for (let i = 0; i < 5; i++) {
-    arrTask3[i] = 1;
-  }
+  const arrTask3 = new Array(numberElements).fill(1).fill(7, 5);
 
   document.write(`
     <section class="task__result">
@@ -75,9 +71,10 @@ if (confirm("Почати тестування?")) {
 
   //4. Дано масив елементів. Вивести на екран елементи, що більші за 100;
 
-  const arrTask4 = [105, 15, 220, 144, 65, 101];
+  let arrTask4 = [105, 15, 220, 144, 65, 101];
+  const newArrTask4 = arrTask4.forEach((el) => el > 100);
 
-  const newArrTask4 = arrTask4.filter((el) => el > 100);
+  // const newArrTask4 = arrTask4.filter((el) => el > 100); // filter - створює новий масив
 
   document.write(`
     <section class="task__result">
@@ -99,11 +96,10 @@ if (confirm("Почати тестування?")) {
 
   const arrTask5 = [-2, 4, -5, 3, 10];
 
-  let multiply = 1;
-
-  for (const el of arrTask5) {
-    if (el > 0) multiply *= el;
-  }
+  const multiply = arrTask5.reduce(
+    (multiplication, el) => (el > 0 ? (multiplication *= el) : multiplication),
+    1,
+  );
 
   document.write(`
     <section class="task__result">

@@ -27,8 +27,9 @@ if (confirm("Почати тестування?")) {
   });
 
   // 4.Сформувати новий масив, що міститиме значення цін у відсотках стосовно максимального
+  const maxPrice = Math.max(...prices);
   const pricesInPercentOfMax = prices.map((el) => {
-    return ((el * 100) / Math.max(...prices)).toFixed(0);
+    return (el * 100) / maxPrice;
   });
   const newPricesInPercentOfMax = pricesInPercentOfMax.map((el, i, arr) => {
     return arr[i] + "%";
@@ -36,10 +37,7 @@ if (confirm("Почати тестування?")) {
 
   // 5. Підрахувати кількість змін цін
   const priceChangesCount = prices.reduce((count, el, index, arr) => {
-    if (index === 0 || el === arr[index - 1]) {
-      return count;
-    }
-    return count + 1;
+    return index === 0 || el === arr[index - 1] ? count : count + 1;
   }, 0);
 
   // 6.Визначити, чи є ціна, що менше 1000
