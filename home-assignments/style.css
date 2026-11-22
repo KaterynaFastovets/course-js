@@ -335,14 +335,17 @@ body {
   height: 100%;
   object-fit: contain;
 }
-.task-list__item{
+.task-list__item {
   list-style: transparent;
+  margin-bottom: 5px;
 }
-.task-list{
-      font-family: var(--font-code);
+.task-list__item > :not(:last-child) {
+  margin-bottom: 10px;
+}
+.task-list {
+  font-family: var(--font-code);
   margin-left: 40px;
   color: var(--text-muted);
- 
 }
 
 /* rabbit */
@@ -440,8 +443,6 @@ body {
   align-items: center;
 }
 
-
-
 /* ===== Task results ===== */
 
 .task__result {
@@ -528,7 +529,6 @@ body {
     font-size: 13px;
   }
 }
-
 
 @media (any-hover: hover), (pointer: fine) {
   .breadcrumbus__link:hover {
